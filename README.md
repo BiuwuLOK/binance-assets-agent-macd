@@ -34,47 +34,32 @@ binance_trading_bot/
 
 ## Setup
 1. Clone the repository:
-    ```sh
-    git clone https://github.com/yourusername/binance-assets-agent-macd.git
-    cd binance-assets-agent-macd
-    ```
-
+```sh
+git clone https://github.com/yourusername/binance-assets-agent-macd.git
+cd binance-assets-agent-macd
+```
+## Installation
 2. Install the required packages:
-    ```sh
-    pip install -r requirements.txt
-    ```
+```sh
+pip install -r requirements.txt
+```
 
 3. Configure your Binance API keys in a `.env` file:
-    ```
-    BINANCE_API_KEY=your_api_key
-    BINANCE_API_SECRET=your_api_secret
-    ```
-
-## Installation
-
-1. Clone the repository:
-
 ```
-bash
-git clone https://github.com/yourusername/binance_trading_bot.git
-Navigate to the project directory:
+BINANCE_API_KEY=your_api_key
+BINANCE_API_SECRET=your_api_secret
 ```
-bash
-cd binance_trading_bot
-Install the required dependencies:
 
-bash
-pip install -r requirements.txt
-Usage
+## Usage
 Running the Bot
 Ensure you have your Binance API key and secret ready.
 
 Run the bot:
-
-bash
+```
+sh
 python -m main_agent
 Follow the prompts to enter your API information and configure your assets.
-
+```
 Importing Assets from a File
 Place your assets.csv or assets.txt file in the data/ directory.
 
