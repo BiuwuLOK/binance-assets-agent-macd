@@ -6,7 +6,20 @@ A multi-asset crypto trading bot that uses technical indicators such as MACD to 
 
 ## Project Structure
 
-binance_trading_bot/ ├── main_agent/ │ ├── init.py │ ├── main.py │ ├── data_fetcher.py │ ├── indicators.py│ ├── trade_logic.py │ └── run.py├── data/ │ ├── assets.csv│ ├── assets.txt├── README.md├── setup.py└── requirements.txt
+binance_trading_bot/
+├── main_agent/
+│   ├── __init__.py
+│   ├── __main__.py
+│   ├── data_fetcher.py
+│   ├── indicators.py
+│   ├── trade_logic.py
+│   └── run.py
+├── data/
+│   ├── assets.csv
+│   ├── assets.txt
+├── README.md
+├── setup.py
+└── requirements.txt
 
 ## Features
 
