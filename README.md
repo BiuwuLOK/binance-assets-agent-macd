@@ -5,7 +5,7 @@ markdown
 A multi-asset crypto trading bot that uses technical indicators such as MACD to automate trading on Binance. This bot fetches historical data, applies trading logic, and simulates or executes trades on the Binance Testnet.
 
 ## Project Structure
-
+```
 binance_trading_bot/
 ├── main_agent/
 │   ├── __init__.py
@@ -20,6 +20,7 @@ binance_trading_bot/
 ├── README.md
 ├── setup.py
 └── requirements.txt
+```
 
 ## Features
 
