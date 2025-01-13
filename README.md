@@ -51,53 +51,50 @@ BINANCE_API_SECRET=your_api_secret
 ```
 
 ## Usage
-Running the Bot
-Ensure you have your Binance API key and secret ready.
-
-Run the bot:
-```
-sh
+### Running the Bot
+1. Ensure you have your Binance API key and secret ready.
+2. Run the bot:
+```sh
 python -m main_agent
-Follow the prompts to enter your API information and configure your assets.
 ```
-Importing Assets from a File
-Place your assets.csv or assets.txt file in the data/ directory.
+3.Follow the prompts to enter your API information and configure your assets.
 
-The file should have the following structure:
-
+### Importing Assets from a File
+1. Place your assets.csv or assets.txt file in the data/ directory.
+2. The file should have the following structure:
+```
 asset,is_long,order_size
-BTC,False,0.0025
+BTC,False,[size]
 LTC,False,100
 TRX,False,1000
-ETH,False,0.03
-BNB,False,0.25
+ETH,False,0.0003
+BNB,False,0.0025
 XRP,False,100
-Run the bot and choose the option to import assets from the file.
+```
+3. Run the bot and choose the option to import assets from the file.
 
-Contributing
-Fork the repository.
-
-Create a new branch.
-
-Make your changes and commit them.
-
-Push to the branch.
-
-Create a new Pull Request.
-
-License
+## License
 This project is licensed under the MIT License.
 
-Acknowledgements
-Binance API
+## Acknowledgements
 
-pandas
+### Binance API
+A big thanks to the [Binance API](https://github.com/sammchardy/python-binance) project which provides a comprehensive Python API for the Binance trading platform. 
 
-pandas-ta
+Here's a quick example of how to use the Binance API to fetch account information:
+```python
+from binance.client import Client
 
-matplotlib
+api_key = 'your_api_key'
+api_secret = 'your_api_secret'
+client = Client(api_key, api_secret, testnet=True)
 
-Contact
+# Get account information
+account_info = client.get_account()
+print(account_info)
+```
+
+## Contact
 For any questions or suggestions, please open an issue or contact me at this project!
 
 Thank you for using the Binance Trading Bot! Happy trading! 📈
