@@ -31,14 +31,34 @@ binance_trading_bot/
 - Interactive setup for API keys and asset configurations
 - Option to import asset data from .csv or .txt files
 
+
+## Setup
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/yourusername/binance-assets-agent-macd.git
+    cd binance-assets-agent-macd
+    ```
+
+2. Install the required packages:
+    ```sh
+    pip install -r requirements.txt
+    ```
+
+3. Configure your Binance API keys in a `.env` file:
+    ```
+    BINANCE_API_KEY=your_api_key
+    BINANCE_API_SECRET=your_api_secret
+    ```
+
 ## Installation
 
 1. Clone the repository:
 
-```bash
+```
+bash
 git clone https://github.com/yourusername/binance_trading_bot.git
 Navigate to the project directory:
-
+```
 bash
 cd binance_trading_bot
 Install the required dependencies:
@@ -93,18 +113,6 @@ pandas-ta
 matplotlib
 
 Contact
-For any questions or suggestions, please open an issue or contact me at [your email here].
+For any questions or suggestions, please open an issue or contact me at this project!
 
 Thank you for using the Binance Trading Bot! Happy trading! 📈
-
-
-### Explanation:
-1. **Project Structure**: Provides an overview of the project directory.
-2. **Features**: Lists the key functionalities of the bot.
-3. **Installation**: Step-by-step instructions for setting up the project.
-4. **Usage**: Guidelines for running the bot and importing assets from a file.
-5. **Contributing**: Instructions for how to contribute to the project.
-6. **License**: Information on the project's license.
-7. **Acknowledgements**: Credit to the libraries and resources used.
-8. **Contact**: Information on how to reach out for questions or suggestions.
-```
