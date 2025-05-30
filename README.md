@@ -23,11 +23,11 @@ A multi-asset crypto trading bot that uses technical indicators such as MACD to 
   ```
 
 ## Demo
-以下為本專案運行時產生的範例圖表：
+
+![MACD 指標圖](pubclic/assets/macd-of-closing.png)
 
 ![BTCUSDT 收盤價與交易信號](pubclic/assets/BTCUSDT-closing-price-with-signals.png)
 
-![MACD 指標圖](pubclic/assets/macd-of-closing.png)
 
 ## Features
 
