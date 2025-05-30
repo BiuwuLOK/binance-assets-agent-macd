@@ -1,6 +1,6 @@
 markdown
 
-# Binance Trading Bot
+# Binance Trading Bot Prototype
 
 A multi-asset crypto trading bot that uses technical indicators such as MACD to automate trading on Binance. This bot fetches historical data, applies trading logic, and simulates or executes trades on the Binance Testnet.
 
@@ -21,6 +21,13 @@ A multi-asset crypto trading bot that uses technical indicators such as MACD to 
   ├── setup.py
   └── requirements.txt
   ```
+
+## Demo
+以下為本專案運行時產生的範例圖表：
+
+![BTCUSDT 收盤價與交易信號](pubclic/assets/BTCUSDT-closing-price-with-signals.png)
+
+![MACD 指標圖](pubclic/assets/macd-of-closing.png)
 
 ## Features
 
@@ -72,6 +79,7 @@ A multi-asset crypto trading bot that uses technical indicators such as MACD to 
   XRP,False,100
   ```
 3. Run the bot and choose the option to import assets from the file.
+
 
 ## License
 This project is licensed under the MIT License.
