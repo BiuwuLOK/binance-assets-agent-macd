@@ -1,25 +1,51 @@
 markdown
 
-# Binance Trading Bot Prototype
+# Binance Trading Bot Base Prototype
 
 A multi-asset crypto trading bot that uses technical indicators such as MACD to automate trading on Binance. This bot fetches historical data, applies trading logic, and simulates or executes trades on the Binance Testnet.
 
 ## Project Structure
   ```
-  binance_trading_bot/
-  ├── main_agent/
-  │   ├── __init__.py
-  │   ├── __main__.py
-  │   ├── data_fetcher.py
-  │   ├── indicators.py
-  │   ├── trade_logic.py
-  │   └── run.py
-  ├── data/
-  │   ├── assets.csv
-  │   ├── assets.txt
-  ├── README.md
-  ├── setup.py
-  └── requirements.txt
+binance-trading-base/
+├── backend/                  # Python FastAPI 專案
+│   ├── app/
+│   │   ├── __init__.py
+│   │   ├── api/              # API 端點 (Routes)
+│   │   │   ├── __init__.py
+│   │   │   ├── endpoints/
+│   │   │   │   ├── __init__.py
+│   │   │   │   └── bot_control.py  # 控制機器人啟動/停止/狀態的 API
+│   │   │   └── websocket.py      # WebSocket 即時通訊端點
+│   │   ├── core/
+│   │   │   ├── __init__.py
+│   │   │   └── config.py         # 讀取 API 金鑰和設定
+│   │   ├── services/
+│   │   │   ├── __init__.py
+│   │   │   ├── binance_service.py # 封裝與幣安 API 的所有互動 (OOP)
+│   │   │   ├── indicator_service.py # 封裝所有技術指標計算 (MACD 等)
+│   │   │   └── trading_bot.py     # 核心交易機器人邏輯 (OOP Class)
+│   │   └── main.py               # FastAPI 應用程式進入點
+│   ├── .env                    # 儲存 API 金鑰 (重要！不要上傳到 Git)
+│   └── requirements.txt
+│
+├── frontend/                 # React 專案
+│   ├── public/
+│   │   └── index.html
+│   ├── src/
+│   │   ├── api/
+│   │   │   └── botApi.js         # 呼叫後端 API 的函式
+│   │   ├── components/
+│   │   │   ├── BotController.js  # 包含開始/停止按鈕的組件
+│   │   │   ├── Dashboard.js      # 主儀表板
+│   │   │   ├── LogStream.js      # 顯示即時日誌的組件
+│   │   │   └── AssetStatus.js    # 顯示各個資產狀態的組件
+│   │   ├── hooks/
+│   │   │   └── useWebSocket.js   # 自訂 hook 用於處理 WebSocket 連線
+│   │   ├── App.js
+│   │   └── index.js
+│   ├── package.json
+│
+└── README.md
   ```
 
 ## Demo
